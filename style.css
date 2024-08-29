@@ -1,0 +1,114 @@
+body,
+html {
+    height: 100%;
+    width: 100;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.containor {
+    width: 100vw;
+    height: fit-content;
+    background: #fcf8f8a1;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+nav {
+    height: fit-content;
+    /* margin: auto; */
+    background-color: #00000073;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+#searchBar input {
+    font-size: 20px;
+}
+
+#searchBar button {
+    font-size: 20px;
+    border-radius: 9px;
+    border: none;
+    background-color: rgba(188, 87, 14, 0.863);
+}
+
+#searchBar button:active {
+    background-color: rgb(13, 171, 13);
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    /* flex-direction: column; */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    gap: 20px;
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px black;
+}
+
+.card img:hover{
+    box-shadow: 10px 15px 15px black;
+}
+
+
+
+footer {
+    display: flex;
+    word-spacing: 20px;
+    height: 10vh;
+    background-color: #000000;
+    justify-content: space-around;
+    color: #fff;
+}
+.detail{
+  
+    position: absolute;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    height: 50vh;
+    border: 2px solid black;
+    background-color: #000000e6;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px black;
+    visibility:hidden;
+    transition: all ease 2s;
+}
+.detail #para{
+    grid-row: 2/3;
+    overflow-y:scroll ;
+    text-emphasis: none;
+}
+#span{
+    grid-row: 3/4; 
+}
+
+
